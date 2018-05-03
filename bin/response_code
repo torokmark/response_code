@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'response_code'
+
+puts "Response code of OK is: #{ ResponseCode.ok  }"

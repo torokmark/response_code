@@ -12,4 +12,3 @@ module ResponseCode
   end
 end
 
-p ResponseCode.send(:ok)
