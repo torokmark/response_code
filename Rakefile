@@ -1,6 +1,8 @@
 $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
 require "response_code/version"
 
+task :default => :cucumber
+
 task :build do
   system "gem build response_code.gemspec"
 end
