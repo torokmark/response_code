@@ -27,3 +27,32 @@ puts ResponseCode.ok
 # => 200
 ```
 
+Using sinatra
+
+```ruby
+#!/usr/bin/env ruby 
+
+require 'sinatra'
+require 'response_code'
+
+get('/') {
+  status ResponseCode.im_a_teapot
+  'I\'m a teapot!' 
+}
+```
+
+Executing `curl -i localhost:4567`
+
+```
+HTTP/1.1 418  
+Content-Type: text/html;charset=utf-8
+Content-Length: 13
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Server: WEBrick/1.4.2 (Ruby/2.5.0/2017-12-25)
+Date: Thu, 03 May 2018 18:24:12 GMT
+Connection: Keep-Alive
+
+I'm a teapot!
+```

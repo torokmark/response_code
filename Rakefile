@@ -8,7 +8,11 @@ task :build do
 end
 
 task :install do
-  system "gem install response_code-0.0.1.gem"
+  system "gem install response_code-#{ ResponseCode::VERSION }.gem"
+end
+
+task :push do
+  system "gem push response_code-#{ ResponseCode::VERSION }.gem"
 end
 
 task :cucumber do
