@@ -1,6 +1,7 @@
 # ResponseCode
 
 [![Build Status](https://travis-ci.org/torokmark/response_code.svg?branch=master)](https://travis-ci.org/torokmark/response_code)
+[![Gem Version](https://badge.fury.io/rb/response_code.svg)](https://badge.fury.io/rb/response_code)
 
 Who knows which response code represents the partial content? Or what code belongs to the error that says the request uri too long? Do you know the status code of the teapot?
 
