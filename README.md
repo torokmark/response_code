@@ -10,7 +10,7 @@ ResponseCode is a tiny tool intended to give a handy way of handling response st
 ### Install
 
 ```ruby
-gem install response_status
+gem install response_code
 ```
 
 or
