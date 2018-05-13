@@ -10,5 +10,13 @@ module ResponseCode
       raise 'Not a valid status!'
     end
   end
+
+  def self.lookup(code)
+    if ResponseCode::CODES.value?(code.to_i)
+      ResponseCode::CODES.key(code.to_i)
+    else
+      raise 'Not a valid code!'
+    end
+  end
 end
 

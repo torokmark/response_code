@@ -10,4 +10,5 @@ end
 
 group :test do
   gem 'cucumber', '~> 2.4'
+  gem 'rspec-expectations'
 end

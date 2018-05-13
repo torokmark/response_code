@@ -6,6 +6,10 @@ Feature: ResponseCode
   Scenario Outline: Codes
     When I call a method with <name>
     Then it should give me <code>
+
+    When I call lookup with <code>
+    Then it should return me <name>
+    
     Examples:
       | name            | code |
       | continue| 100|

@@ -12,6 +12,8 @@ Gem::Specification.new do |spec|
   spec.homepage    = 'http://github.com/torokmark/response_code'
   spec.license     = 'MIT'
 
+  spec.required_ruby_version = '>= 2.0'
+
   spec.files            = Dir.glob("{bin,lib}/**/*") + %w(LICENSE README.md)
   spec.test_files       = Dir.glob("spec/**/*")
   spec.executables      = ['response_code']
