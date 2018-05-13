@@ -18,3 +18,7 @@ end
 task :cucumber do
   system 'cucumber features'
 end
+
+task :exec do
+  system './bin/response_code'
+end

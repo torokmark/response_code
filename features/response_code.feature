@@ -70,3 +70,15 @@ Feature: ResponseCode
       | not_extended| 510|
       | network_authentication_required| 511|
       | network_connect_timeout_error| 599|
+
+  Scenario Outline: Aborted
+    When I call a method in Aborted with <name>
+    Then it should give me <code> from Aborted
+
+    When I call Aborted.lookup with <code>
+    Then it should return me <name> from Aborted
+    
+    Examples:
+      | name            | code |
+      | checkpoint      | 103  |
+	
