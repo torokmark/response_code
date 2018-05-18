@@ -1,5 +1,6 @@
 require 'response_code/version'
 require 'response_code/codes'
+require 'response_code/aborted'
 
 module ResponseCode 
 

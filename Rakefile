@@ -22,3 +22,5 @@ end
 task :exec do
   system './bin/response_code'
 end
+
+task :full_build => [:build, :install, :exec]
