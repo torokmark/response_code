@@ -71,14 +71,42 @@ Feature: ResponseCode
       | network_authentication_required| 511|
       | network_connect_timeout_error| 599|
 
-  Scenario Outline: Aborted
-    When I call a method in Aborted with <name>
-    Then it should give me <code> from Aborted
+  Scenario Outline: Unofficial response codes 
+    When I call a method in <module> with <name>
+    Then it should give me <code> from <module>
 
-    When I call Aborted.lookup with <code>
-    Then it should return me <name> from Aborted
+    When I call <module> lookup with <code>
+    Then it should return me <name> from <module>
     
     Examples:
-      | name            | code |
-      | checkpoint      | 103  |
+      | module           | name                                 | code |
+      | Aborted          | checkpoint                           | 103  |
+      | SpringFramework  | method_failure                       | 420  |
+      | Twitter          | enhance_your_calm                    | 420  |
+      | Microsoft        | blocked_by_windows_parental_controls | 450  |
+      | Esri             | invalid_token                        | 498  |
+      | Esri             | token_required                       | 499  |
+      | ApacheWebServer  | bandwith_limit_exceeded              | 509  |
+      | Pantheon         | site_is_frozen                       | 530  |
+      | Signal           | network_read_timeout_error           | 598  |
+      | IIS              | login_time_out                       | 440  |
+      | IIS              | retry_with                           | 449  |
+      | IIS              | redirect                             | 451  |
+      | Nginx            | no_response                          | 444  |
+      | Nginx            | request_header_too_large             | 494  |
+      | Nginx            | ssl_certificate_error                | 495  |
+      | Nginx            | ssl_certificate_required             | 496  |
+      | Nginx            | http_request_sent_to_https_port      | 497  |
+      | Nginx            | client_closed_request                | 499  |
+      | Cloudflare       | unknown_error                        | 520  |
+      | Cloudflare       | web_server_is_down                   | 521  |
+      | Cloudflare       | connection_timed_out                 | 522  |
+      | Cloudflare       | origin_is_unreachable                | 523  |
+      | Cloudflare       | a_timeout_occurred                   | 524  |
+      | Cloudflare       | ssl_handshake_failed                 | 525  |
+      | Cloudflare       | invalid_ssl_certificate              | 526  |
+      | Cloudflare       | railgun_error                        | 527  |
+      | Cloudflare       | origin_dns_error                     | 530  |
+
+
 	

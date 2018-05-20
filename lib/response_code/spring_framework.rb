@@ -1,12 +1,11 @@
 require 'response_code/base_imp'
 
 module ResponseCode
-  module Aborted
+  module SpringFramework
     extend ResponseCode::BaseImp
 
     @CODES = {
-      checkpoint: 103
+      method_failure: 420
     }
-
   end
 end

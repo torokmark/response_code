@@ -1,12 +1,11 @@
 require 'response_code/base_imp'
 
 module ResponseCode
-  module Aborted
+  module Twitter 
     extend ResponseCode::BaseImp
 
     @CODES = {
-      checkpoint: 103
+      enhance_your_calm: 420
     }
-
   end
 end

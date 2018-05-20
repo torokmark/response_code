@@ -1,12 +1,13 @@
 require 'response_code/base_imp'
 
 module ResponseCode
-  module Aborted
+  module IIS 
     extend ResponseCode::BaseImp
 
     @CODES = {
-      checkpoint: 103
+      login_time_out: 440,
+      retry_with: 449,
+      redirect: 451
     }
-
   end
 end

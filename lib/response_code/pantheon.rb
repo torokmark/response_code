@@ -1,12 +1,11 @@
 require 'response_code/base_imp'
 
 module ResponseCode
-  module Aborted
+  module Pantheon 
     extend ResponseCode::BaseImp
 
     @CODES = {
-      checkpoint: 103
+      site_is_frozen: 530
     }
-
   end
 end

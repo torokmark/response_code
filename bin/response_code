@@ -6,3 +6,4 @@ require 'response_code/aborted'
 puts "Response code of OK is: #{ ResponseCode.ok  }"
 
 puts "#{ ResponseCode::Aborted.lookup(103) }"
+puts "#{ ResponseCode::Aborted.checkpoint }"

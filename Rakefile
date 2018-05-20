@@ -23,4 +23,4 @@ task :exec do
   system './bin/response_code'
 end
 
-task :full_build => [:build, :install, :exec]
+task :full => [:build, :install, :cucumber, :exec]

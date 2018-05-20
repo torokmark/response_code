@@ -1,12 +1,12 @@
 require 'response_code/base_imp'
 
 module ResponseCode
-  module Aborted
+  module Esri 
     extend ResponseCode::BaseImp
 
     @CODES = {
-      checkpoint: 103
+      invalid_token: 498,
+      token_required: 499
     }
-
   end
 end

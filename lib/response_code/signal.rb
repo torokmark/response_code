@@ -1,12 +1,11 @@
 require 'response_code/base_imp'
 
 module ResponseCode
-  module Aborted
+  module Signal 
     extend ResponseCode::BaseImp
 
     @CODES = {
-      checkpoint: 103
+      network_read_timeout_error: 598
     }
-
   end
 end

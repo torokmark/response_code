@@ -4,8 +4,8 @@ gemspec
 gem "rake"
 
 group :development, :test do
-  gem 'pry', '~> 0.11'
-  gem 'pry-byebug'
+#  gem 'pry', '~> 0.11'
+#  gem 'pry-byebug'
 end
 
 group :test do

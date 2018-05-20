@@ -1,12 +1,11 @@
 require 'response_code/base_imp'
 
 module ResponseCode
-  module Aborted
+  module ApacheWebServer 
     extend ResponseCode::BaseImp
 
     @CODES = {
-      checkpoint: 103
+      bandwith_limit_exceeded: 509
     }
-
   end
 end
