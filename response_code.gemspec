@@ -8,7 +8,6 @@ Gem::Specification.new do |spec|
   spec.summary     = "Readable way of response codes."
   spec.description = "Collection of response codes in readable and talkative way."
   spec.authors     = ["Mark Torok"]
-  spec.email       = 'torokmark@gmx.com'
   spec.homepage    = 'http://github.com/torokmark/response_code'
   spec.license     = 'MIT'
 
