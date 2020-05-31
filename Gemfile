@@ -1,8 +1,6 @@
 source 'http://rubygems.org'
 
 gemspec
-gem 'rake'
-ruby '>= 2.3'
 
 group :development, :test do
 #  gem 'pry', '~> 0.11'
